@@ -6,7 +6,12 @@ pipeline {
                 sh 'python3 -m py_compile main.py'
             }
         }
-	stage('test') {
+	stage('install pytest'){
+             steps{
+                   sh 'pip3 install pystest --user'
+            }
+        } 
+       stage('test') {
             steps {
 		sh 'python3 -m pytest'
             }
