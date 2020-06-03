@@ -8,7 +8,7 @@ pipeline {
         }
 	stage('install pytest') {
              steps {
-                   sh 'pip install pystest --user'
+                   sh 'pip3 install pytest --user'
             }
         } 
        stage('test') {
