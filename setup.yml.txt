@@ -1,0 +1,9 @@
+- hosts: all
+  tasks:
+   - package:
+       name: git
+       state: present
+   - git:
+       repo: https://github.com/bhuvaneshnakka/mypythoncode
+       dest: /home/ec2-user/python
+
