@@ -18,7 +18,7 @@ pipeline {
         }
 stage('deploy') {
             steps {
-		sh 'ansible-playbook -i setup.yml'
+		sh 'ansible-playbook -i ip-server setup.yml'
             }
         }  
   }
