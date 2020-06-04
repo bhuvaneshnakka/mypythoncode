@@ -6,12 +6,5 @@
    - git:
        repo: https://github.com/bhuvaneshnakka/mypythoncode
        dest: /home/ec2-user/python
-- hosts: test
-  remote_user: ec2-user@ec2-54-157-141-225
-  roles:
-     - common
-     - deploy
 
-  vars:
-    - skeleton_port: 80
 
